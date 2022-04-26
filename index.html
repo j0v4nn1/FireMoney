@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>FireMoney</title>
+</head>
+
+<body>
+
+    <header class="header__container">
+        <nav class="header__nav">
+            <div class="header__logo">
+                <a class="header__logo-link" href="#"><span class="logo-fire">Fire</span><span
+                        class="logo-money">Money</span></a>
+            </div>
+            <ul class="header__menu">
+                <li class="header__menu-link"><a href="#">Почему мы?</a></li>
+                <li class="header__menu-link"><a href="#">О сервисе</a></li>
+                <li class="header__menu-link"><a href="#">Вопросы-ответы</a></li>
+            </ul>
+            <button type="button" class="header__btn-sign-up">Вход в личный кабинет</button>
+        </nav>
+    </header>
+    <main>
+        <section class="main-section">
+            <div class="main-section__container">
+                <div class="main-section__offer">
+                    <div class="main-section__offer-title">
+                        <h1>Горячие предложения</h1>
+                    </div>
+                    <div class="main-section__offer-main-text">
+                        <p class="main-section__uppercase">быстрых займов <br>
+                            по всей России! </p>
+                        <p class="main-section__lowercase">Без проверки кредитной истории. <br>
+                            От 1 000 ₽ за 15 минут.</p>
+                    </div>
+                    <div class="main-section__offer-footer">
+                        <p>Внимание! Услуга обработки заявки платная <br>
+                            и составляет от 98 ₽ до 398 ₽ раз в неделю</p>
+                    </div>
+                </div>
+                <div class="main-section__woman-image-container">
+                </div>
+                <div class="main-section__calculator-container">
+                    <div class="main-section__calculator-form">
+                        <form name="myForm" action="#">
+                            <div class="main-section__calculator-form-amount">
+                                <label for="amount"><span class="main-section__calculator-form-amount-name">Cумма
+                                        кредита</span></label><br>
+                            </div>
+                            <div class="main-section__calculator-form-amount-range">
+                                <div class="main-section__calculator-form-amount-range-value-rub" id="range-rub">
+                                    <span>65 000 ₽</span>
+                                </div>
+                                <input type="range" class="amount" name="amount" value="65000" min="1000" max="100000" oninput="rangeRub()"
+                                    >
+                                <div class="main-section__calculator-form-amount-range-minmax-rub-container">
+                                    <output class="main-section__calculator-form-amount-range-min-rub">1000
+                                        ₽</output><output
+                                        class="main-section__calculator-form-amount-range-max-rub">100000₽</output>
+                                </div> <br>
+                            </div>
+                            <div class="main-section__calculator-form-limitation">
+                                <div class="main-section__calculator-form-limitation-name">
+                                    <label for="limitation"><span>Cрок кредита</span></label><br>
+                                </div>
+                                <div class="main-section__calculator-form-limitation-range">
+                                    <div class="main-section__calculator-form-limitation-range-value-days"
+                                        id="range-days"><span>10 дней</span></div>
+                                    <input type="range" class="limitation" name="limitation" min="0" max="25"
+                                        value="5" oninput="rangeDays()">
+                                    <div class="main-section__calculator-form-amount-range-minmax-days-container">
+                                        <output
+                                            class="main-section__calculator-form-limitation-range-min-days">5</output><output
+                                            class="main-section__calculator-form-limitation-range-max-days">30</output>
+                                    </div>
+
+                                    <br>
+                                </div> <br>
+                            </div>
+                    </div>
+                    <div class="main-section__calculator-form-button"> <button class="main-section__calculator-submit"
+                            type="button">Оформить заявку</button>
+                    </div>
+                    </form>
+                    <div class="main-section__calculator-footer">
+                        <div class="main-section__calculator-footer-top">
+                            <div class="main-section__calculator-footer-top-take-money">
+                                <span class="main-section__calculator-footer-top-take-money-title">Вы берете</span> <br>
+                                <span class="main-section__calculator-footer-top-take-money-counter">20 000 ₽
+                                </span>
+                            </div>
+                            <div class="main-section__calculator-footer-top-return">
+                                <span class="main-section__calculator-footer-top-return-title">К возврату</span> <br>
+                                <span class="main-section__calculator-footer-top-return-counter">25 650 ₽ </span>
+                            </div>
+                        </div>
+                        <div class="main-section__calculator-footer-bottom">
+                            <div class="main-section__calculator-footer-bottom-return-date">
+                                <span class="main-section__calculator-footer-bottom-return-date-title">Дата
+                                    возврата</span> <br>
+                                <span class="main-section__calculator-footer-bottom-return-date-counter">08 января
+                                    2022</span>
+                            </div>
+                            <div class="main-section__calculator-bottom-monthly-payment">
+                                <span class="main-section__calculator-bottom-monthly-payment-title">Ежемесячный
+                                    платеж</span> <br>
+                                <span class="main-section__calculator-bottom-monthly-payment-counter">5 650 ₽
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

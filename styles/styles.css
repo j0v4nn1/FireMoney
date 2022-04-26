@@ -1,0 +1,319 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.header__container {
+    position: absolute;
+    width: 67%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.logo-fire {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    color: white;
+}
+
+.logo-money {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 33px;
+    color: white;
+}
+
+.header__nav {
+    padding-top: 51px;
+    display: flex;
+}
+
+.header__menu {
+    width: 41%;
+    margin: auto 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-link {
+    display: inline;
+    margin-left: 35px;
+}
+
+.header__menu-link:nth-child(1) {
+    margin-left: 0;
+}
+
+.header__menu-link a {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.header__btn-sign-up {
+    padding: 18PX 25PX 17PX 33PX;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    background-color: #FF7B00;
+    border-radius: 8px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.main-section {
+    padding-top: 210px;
+    padding-bottom: 65px;
+    background-image: url('../images/header-back.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-section__container {
+    display: flex;
+    width: 67%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.main-section__offer-title {
+    width: 382px;
+    height: 56px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.main-section__offer-title h1 {
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #3C4260;
+    padding: 15px 23px 15px 75px;
+}
+
+.main-section__offer-title h1::before {
+    top: 210px;
+    left: 325px;
+    position: absolute;
+    content: url('../images/fire-header.svg');
+}
+
+.main-section__uppercase {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main-section__lowercase {
+    font-size: 27px;
+    color: #fff;
+}
+
+.main-section__woman-image-container {
+    z-index: 2;
+    top: 111px;
+    left: 794px;
+    position: absolute;
+    background-image: url("../images/woman.png");
+    background-size: cover;
+    width: 409px;
+    height: 694px;
+}
+
+.main-section__offer-footer {
+    margin-top: 150px;
+}
+
+.main-section__offer-footer p {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.main-section__calculator-container {
+    margin-top: -55px;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 29px 15px 36px 28px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 95%;
+    height: 7px;
+    cursor: pointer;
+}
+
+.amount, .limitation {
+    background-image: linear-gradient(to right, #FFC83E , #FF9F47 );
+}
+
+
+.amount {
+    background: -webkit-linear-gradient(left, #FFC83E 0%, #FF9F47 65%, #ECECEC 65%, #ECECEC 100%);
+}
+
+.limitation {
+    background: -webkit-linear-gradient(left, #FFC83E 0%, #FF9F47 20%, #ECECEC 20%, #ECECEC 100%);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #FFA147;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+
+}
+
+.main-section__calculator-form-amount-name {
+    font-size: 22px;
+    color: #45515F;
+    font-weight: 400;
+}
+
+.main-section__calculator-form-limitation-name {
+    font-size: 22px;
+    color: #45515F;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.main-section__calculator-form-amount-range-minmax-rub-container,
+.main-section__calculator-form-amount-range-minmax-days-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-top: 5px;
+}
+
+.main-section__calculator-form-amount-range-min-rub,
+.main-section__calculator-form-amount-range-max-rub,
+.main-section__calculator-form-limitation-range-min-days,
+.main-section__calculator-form-limitation-range-max-days {
+    color: #C0C2C5;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.main-section__calculator-form-amount-range {
+    margin-top: 34px;
+}
+
+.main-section__calculator-form-limitation {
+    margin-top: 24px;
+}
+
+.main-section__calculator-form-amount-range-value-rub span {
+    position: absolute;
+    top: 218px;
+    right: 433px;
+    color: #45515F;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-section__calculator-form-limitation-range-value-days span {
+    position: absolute;
+    top: 375px;
+    right: 600px;
+    color: #45515F;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-section__calculator-form-limitation-range {
+    margin-top: 34px;
+}
+
+.main-section__calculator-form-button {
+    margin-top: 2px;
+    text-align: center;
+    margin-left: 59px;
+    margin-right: 53px;
+}
+
+.main-section__calculator-submit {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 22px 44px;
+    background-image: url("../images/btn.png");
+    background-size: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main-section__calculator-footer {
+    margin-top: 43px;
+    padding: 10px 10px 0px 39px;
+}
+
+.main-section__calculator-footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+.main-section__calculator-footer-top-return,
+.main-section__calculator-bottom-monthly-payment {
+    flex-basis: 150px;
+}
+
+.main-section__calculator-footer-top-take-money-title,
+.main-section__calculator-footer-top-return-title,
+.main-section__calculator-footer-bottom-return-date-title,
+.main-section__calculator-bottom-monthly-payment-title {
+    color: #45515F;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.main-section__calculator-footer-top-take-money-counter,
+.main-section__calculator-footer-top-return-counter,
+.main-section__calculator-footer-bottom-return-date-counter,
+.main-section__calculator-bottom-monthly-payment-counter {
+    color: #F28925;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-section__calculator-footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
